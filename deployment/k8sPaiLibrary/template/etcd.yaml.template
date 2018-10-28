@@ -52,10 +52,6 @@ spec:
     volumeMounts:
     - mountPath: /var/etcd
       name: varetcd
-    resources:
-      limits:
-        memory: "1Gi"
-        cpu: "1000m"
   volumes:
   - hostPath:
       path: {{ clusterconfig['etcd-data-path'] }}
